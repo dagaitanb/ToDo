@@ -8,7 +8,9 @@ This repository was created as a solution for Loborintos - Sport Spot admission 
 <b>Front:</b> HTML 5 - CSS 3 - Bootstrap
 <b>Backend:</b> PHP - MySql
 
-<b>Deploy and test:</b> To run this project please choose the application host of your preference, in this case XAMPP was chosen, you must go to the address: http://localhost:80/index.php, to use the respective functions this video is attached demonstrative: https://www.loom.com/share/c7cad13893c1499196e20440260f89c7
+<b>Deploy and test:</b> To run this project please choose the application host of your preference, in this case XAMPP was chosen, you must go to the address: http://localhost:80/index.php, to use the respective functions this video is attached demonstrative: 
+
+https://www.loom.com/share/c7cad13893c1499196e20440260f89c7
 
 * <b>Create Todo</b> Method POST to create a ToDo.
 * <b>Edit Todo</b> Method POST to update a ToDo.
