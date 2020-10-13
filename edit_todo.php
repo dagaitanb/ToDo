@@ -3,11 +3,17 @@ include("db.php");
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $query = "SELECT id, title, description, creation_date, modification_date, status FROM todo WHERE id = $id";
-    $result = mysqli_query($con, $query);
-    if (mysqli_num_rows($result) > 0) {
-        $row = mysqli_fetch_array($result);
-        $title = $row['title'];
-        $description = $row['description'];
+    
+    try {
+        $result = mysqli_query($con, $query);
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_array($result);
+            $title = $row['title'];
+            $description = $row['description'];
+        }
+    } catch (Exception $e) {
+        header("HTTP/1.1 500 Internal Server Error");
+        var_dump($e->getMessage());
     }
 }
 
