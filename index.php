@@ -34,6 +34,7 @@
                         <th>Title</th>
                         <th>Description</th>
                         <th>Creation Date</th>
+                        <th>Modification Date</th>
                         <th>Actions</th>
                     </tr>
                     <tbody>
@@ -46,6 +47,7 @@
                                 <td><?php echo $row['title'] ?></td>
                                 <td><?php echo $row['description'] ?></td>
                                 <td><?php echo $row['creation_date'] ?></td>
+                                <td><?php echo $row['modification_date'] ?></td>
                                 <td>
                                     <a href="edit_todo.php?id=<?php echo $row['id']?>" class="btn btn-info">
                                         <i class="far fa-edit"></i>
